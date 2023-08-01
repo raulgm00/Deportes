@@ -1,0 +1,143 @@
+.footer{
+  background-color: var(--black);
+  padding: 20px 0;
+}
+
+.footer .container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+form input{
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  padding: 0 1.5em;
+  color: var(--gray);
+}
+
+form button{
+  padding: 10px 15px;
+  background-color: var(--violet);
+  border-radius: 20px;
+  color: var(--whithe);
+  display: flex;
+}
+
+.group__links{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: 25px;
+  color: var(--whithe);
+}
+
+.links__1{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.footer .container .group__links .links__1 a{
+  color: var(--whithe);
+}
+
+.links__2{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.footer .container .group__links .links__2 a{
+  color: var(--whithe);
+}
+
+.group__icons__logo{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.group__icons__logo .redes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+
+}
+
+.footer__pie > small{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: var(--gray);
+  text-align: center;
+  background-color: var(--black);
+}
+
+
+@media (min-width: 700px){
+  form{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: baseline;
+    gap: 15px;
+    align-items: center;
+    
+  }
+
+  .group__links{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 25px;
+    color: var(--whithe);
+    gap: 80px;
+  }
+  
+  form input{
+    border: none;
+    border-radius: 100px;
+    width: 80%;
+    padding: 0 1.5em;
+    color: var(--gray);
+  }
+  
+  form button{
+    padding: 10px 15px;
+    background-color: var(--violet);
+    border-radius: 20px;
+    color: var(--whithe);
+    display: flex;
+
+  }
+
+  .footer .container{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+  }
+  
+  body > small{
+    color: var(--gray);
+    text-align: center;
+
+    
+  }
+  
+  .group__icons__logo {
+    flex-flow: column-reverse nowrap;
+  }
+}
